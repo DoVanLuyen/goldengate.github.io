@@ -1,0 +1,388 @@
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+* {
+	margin: 0;
+}
+
+div {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*main {
+	background-image: url("../images/phongnenxanh.jpg");
+	padding-bottom: 10px;
+}*/
+.wrapper {
+	max-width: 1456px;
+	position: relative;
+	margin:auto;
+}
+/*--------------------------------*/
+
+.header-top{
+	position: relative;
+	background-color: black;
+	height: 40px;
+	text-align: right;
+}
+.header-top ul{
+	list-style-type: none: 
+}
+.header-top ul li{
+	display: inline-block;
+}
+
+.header-top ul li a:hover {
+	color: red;
+}
+.header-top ul .email-top {
+	padding-right: 15px;
+	border-right: 1px solid white;
+	color: white;
+}
+.header-top ul .email-top i{
+	display: inline-block;
+	margin-right: 5px;
+}
+.header-top ul .email-top i:hover {
+	color: red
+}
+.header-top ul .icon-top {
+	border-right: 1px solid white;
+	padding-right: 5px;
+	margin-left: -25px;
+}
+.header-top ul .icon-top li{
+	color: white;
+	margin-right: 1rem;
+}
+.header-top ul .icon-top li a {
+	color: white;
+	display: block;
+	text-align: center;
+}
+.header-top ul .icon-top li a:hover {
+	color: red;
+}
+.header-top ul .area-top{
+	border-right: 1px solid white;
+	padding-right: 18px;
+	margin-left: -25px;
+}
+/* Header Intro*/
+.header-intro {
+	position: relative;
+	text-align: center;
+}
+.header-intro .intro-img{
+	padding-top: 10px;
+}
+.header-intro .intro-content h2 {
+    font-family: "SFUFuturaExtraBold";
+    text-shadow: 2px 1px 0 #fff, 1px 2px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 4px 4px 4px #808080;
+}
+.header-intro .intro-content h4 {
+	font-family: "SFUFuturaExtraBold";
+}
+.header-intro .intro-content p{
+	font-family: "SFUFuturaExtraBold";
+    text-shadow: 2px 1px 0 #fff, 1px 2px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 4px 4px 4px #808080;
+    font-size: 2rem;
+	color: red;
+}
+.header-intro .intro-contact {
+	margin-top: 40px;
+	background-color: yellow;
+}
+.header-intro .intro-contact .img-contact {
+	float: left;
+}
+.header-intro .intro-contact .text-contact {
+	float: left;
+	margin-left: 5px;
+}
+.header-intro .intro-contact .text-contact h5 {
+	font-family: "SFUFuturaExtraBold";
+	text-shadow: 2px 1px 0 #fff, 1px 2px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 4px 4px 4px #808080;
+	font-size: 1.6rem;
+}
+.header-intro .intro-contact .text-contact h4{
+	font-family: "SFUFuturaExtraBold";
+    text-shadow: 2px 1px 0 #fff, 1px 2px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 4px 4px 4px #808080;
+    color: red;
+}
+/*END HEADER INTRO*/
+/*Menu*/
+.header-menu{
+	position: relative;
+	background-color: black;
+	height: 40px;
+	align-items: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    display: -webkit-box;	
+}
+.header-menu .menu-top ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+}
+.header-menu .menu-top ul li {
+	margin: 0;
+	padding:0;
+	display: block;
+	margin-right: 3rem;
+	padding-right: 3rem;
+	border-right: 1px solid rgba(246, 246, 246, 0.4);
+}
+.header-menu .menu-top ul li a {
+	color: white;
+	text-decoration: none;
+}
+.header-menu .menu-top ul li a:hover {
+	color: red;
+}
+/*END MENU*/
+/*---------------Intro-Images-------------------------*/
+.position-main{
+	position: relative;
+	margin-top: 10px;
+}
+.position-main img{
+	max-width: 100%;
+}
+.position-main .intro-img1 {
+	margin-bottom: 10px;
+}
+.position-main .intro-img1,.position-main .intro-img2 {
+	position: relative;
+	overflow: hidden;
+}
+.position-main .intro-img1 a,.position-main .intro-img2 a{
+	display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.position-main .intro-img1 .position-over{
+	position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .4s linear all;
+    -o-transition: .4s linear all;
+    transition: .4s linear all;
+}
+.position-main .intro-img1 .position-over h6 {
+	position: relative;
+	color: #fff;
+    font-size: 3rem;
+}
+.position-main .intro-img1 .position-over h6:after {
+    content: "";
+	position: absolute;
+    bottom: -10px;
+    background-color: #f7f4f4;
+    height: 3px;
+    width: 82px;
+    left: 41%;
+}
+.position-main .intro-img1:hover .position-over {
+	opacity: 1;
+    visibility: visible;
+    left: 0;
+}
+.position-main .intro-img2 .position-over{
+	position: absolute;
+    top: 0;
+    right: 100% !important;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .4s linear all;
+    -o-transition: .4s linear all;
+    transition: .4s linear all;
+}
+.position-main .intro-img2 .position-over h6 {
+	color: #fff;
+    font-size: 3rem;
+    position: relative;
+}
+.position-main .intro-img2 .position-over h6:after {
+    content: "";
+	position: absolute;
+    bottom: -7px;
+    background-color: #f7f4f4;
+    height: 3px;
+    width: 82px;
+    left: 41%;
+}
+.position-main .intro-img2:hover .position-over {
+	opacity: 1;
+    visibility: visible;
+    right: 0 !important;
+    left: auto;
+}
+/*---------------END Intro-Images-------------------------*/
+
+/*---------------Start-Product-------------------------*/
+.pro-main {
+	position: relative;
+	text-align: center;
+	padding-top: 15px;
+	margin-bottom: 40px;
+}
+.pro-main h2:after {
+	content: "";
+	position: absolute;
+    bottom: -7px;
+    background-color: yellow;
+    height: 1.5px;
+    width: 82px;
+    left: 45%;
+}
+
+
+.product-main .pro-item1,
+.product-main .pro-item2,
+.product-main .pro-item3 {
+	position: relative;
+	width: 100%;
+}
+.product-main article {
+	position: relative;
+}
+.product-main article .pro-item1 {
+	position: relative;
+}
+.product-main article .pro-item1 a {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	border: 1px solid #bfbfbf;
+	border-radius: 3px;
+}
+.product-main article .pro-item1 a:after {
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: 4px solid #fff;
+    outline-offset: -4px;
+}
+.product-main article .pro-item1 img {
+	width: 100%;
+	height: 310px;
+	display: inline-block;  
+}
+.product-main article:hover .pro-item1 a {
+	-webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+.product-main article:hover .pro-item1 a img{
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.product-main article .pro-content {
+	position: relative;
+	text-align: center;
+}
+.product-main article:hover .pro-content h4 {
+	color: red;
+}
+/*---------------Start-Brand-------------------------*/
+.brand-area {
+	position: relative;
+}
+.brand-area .brand-theme {
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	display: block;
+	text-align: center;
+	height: 85px;
+}
+
+/*---------------End-Brand-------------------------*/
+
+/*---------------Start-Footer-------------------------*/
+.footer-main {
+	position: relative;
+	background-color: black;
+	color: white;
+}
+.footer-main h3 {
+	color: yellow;
+	font-size: 2rem;
+}
+.footer-main .footer-left .line {
+	width: 20%;
+	height:3px;
+	background-color: yellow;
+}
+.footer-main .footer-left ul {
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+.footer-main .footer-left ul li {
+	
+}
+.footer-main .footer-left ul li i {
+	margin-right: .5rem;
+	color: yellow;
+}
+
+.footer-main .footer-center .line {
+	width: 30%;
+	height:3px;
+	background-color: yellow;
+	margin-bottom: 8px;
+}
+.footer-main .footer-right .line {
+	width: 30%;
+	height:3px;
+	background-color: yellow;
+	margin-bottom: 8px;
+}
+.footer-main .copyright {
+	color: yellow;
+	border-top: 1px solid #444041;
+}
+

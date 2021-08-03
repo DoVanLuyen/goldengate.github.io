@@ -1,0 +1,19 @@
+/*RESPONSIVE*/
+@media(max-width: 1200px) {
+    .intro-img{
+    	visibility: hidden;
+    }
+    .intro-contact{
+    	visibility: hidden;
+    }
+}
+@media (max-width: 768px) {
+	.area-top {
+		visibility: hidden;
+	}
+}
+@media (min-width: 570px) and (max-width: 764px) {
+	.product-main article {
+		
+	}
+}
